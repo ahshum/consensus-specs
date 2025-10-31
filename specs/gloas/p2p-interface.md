@@ -227,7 +227,7 @@ The following validations MUST pass before forwarding the
   gossip or non-gossip sources) (a client MAY queue payload for processing once
   the block is retrieved).
 - _[IGNORE]_ The node has not seen another valid
-  `SignedExecutionPayloadEnvelope` for this block root from this builder.
+  `SignedExecutionPayloadEnvelope` for this block root.
 - _[IGNORE]_ The envelope is from a slot greater than or equal to the latest
   finalized slot -- i.e. validate that
   `envelope.slot >= compute_start_slot_at_epoch(store.finalized_checkpoint.epoch)`
